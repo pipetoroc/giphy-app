@@ -7,7 +7,6 @@ export default function getGifs ({ keyword = 'panda' } = {}) {
     .then(res => res.json())
     .then(response => {
       const { data } = response
-      console.log(data)
       const gifs = data.map(image => {
         const { id, images, title } = image
         const { url } = images.downsized_medium
