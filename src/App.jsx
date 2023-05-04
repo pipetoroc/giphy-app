@@ -1,16 +1,28 @@
 import './App.css'
-import ListOfGifs from './components/ListOfGifs/ListOfGifs'
+import Home from './pages/Home/index'
+import SearchResults from './pages/SearchResults/index'
+import Detail from './pages/Detail/index'
 import { Link, Route } from 'wouter'
 
 function App () {
   return (
     <>
-      <h1> Giphy App </h1>
-
       <section className='app'>
+        <Link to='/'>
+          <img className="logo" src='/' />
+        </Link>
+
         <Route
-          path='/gif/:keyword'
-          component={ListOfGifs}
+          component={Home}
+          path="/"
+        />
+        <Route
+          component={SearchResults}
+          path='/search/:keyword'
+        />
+        <Route
+          component={Detail}
+          path='/gif/:id'
         />
       </section>
     </>

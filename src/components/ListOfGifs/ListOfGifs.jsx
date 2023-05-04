@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import Gif from '../Gif/Gif'
 import getGifs from '../../services/getGifs'
 
-function ListOfGifs ({ params }) {
-  const { keyword } = params
+function ListOfGifs ({ params }) { //eslint-disable-line
+  const { keyword } = params //eslint-disable-line
   const [gifs, setGifs] = useState([])
   const [loading, setLoading] = useState(false)
 

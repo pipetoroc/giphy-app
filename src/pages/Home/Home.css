@@ -1,0 +1,14 @@
+.home__title{
+  margin-bottom: 64px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.home__input{
+  background-color: var(--main);
+  padding: 8px;
+  border-radius: 4px;
+}
+.home__input::placeholder{
+  color: var(--soft-dark);
+}
