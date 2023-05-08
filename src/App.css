@@ -1,6 +1,27 @@
 .app{
-  flex-direction: column;
+  background-color: var(--main);
+  color: var(--text);
   min-height: 100vh;
-  min-width: 100vw;
-  margin: 16px;
+}
+.home__title{
+  margin-bottom: 64px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text);
+}
+.home__form{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.home__input{
+  justify-self: center;
+  align-self: center;
+  background-color: var(--tertiary  );
+  padding: 8px;
+  border-radius: 4px;
+}
+.home__input::placeholder{
+  color: var(--soft-dark);
 }

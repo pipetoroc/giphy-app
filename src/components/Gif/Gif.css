@@ -1,3 +1,6 @@
-.gif-container{
-  width: fit-content;
+.gif-container h4 {
+  position: absolute;
+  font-size: 12px;
+  background: rgba(0, 0, 0, .3);
+  color: #fff;
 }

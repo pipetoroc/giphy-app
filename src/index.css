@@ -9,10 +9,12 @@
 */
 /* Aquí definimos las Custom properties */
 :root {
-  --negro: #393939;
-  --light: #F2F2F2;
-  --main:#9E9BF2;
-  --accent: #2E27F2;
+  --main: #fffffe;
+  --text: #272343;
+  --soft-dark:#2d334a;
+  --accent: #ffd803;
+  --secondary:#e3f6f5;
+  --tertiary: #bae8e8;
   /* Tipografía */
   --tipo-principal: Helvetica, Arial, sans-serif;
   --tipo-secundaria: Verdana;

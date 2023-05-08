@@ -17,13 +17,16 @@ function ListOfGifs ({ params }) { //eslint-disable-line
 
   if (loading) return <span> Cargando </span>
 
-  return gifs.map(({ id, title, url }) =>
-    <Gif
-      id={id}
-      key={id}
-      title={title}
-      url={url}
-    />)
+  return <div className='ListOfGifs'>
+    {
+      gifs.map(({ id, title, url }) =>
+        <Gif
+          id={id}
+          key={id}
+          title={title}
+          url={url}
+          />)
+    }
+  </div>
 }
-
 export default ListOfGifs
