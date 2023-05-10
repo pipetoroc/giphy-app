@@ -4,3 +4,6 @@
   background: rgba(0, 0, 0, .3);
   color: #fff;
 }
+.gif-container{
+  height: max-content;
+}

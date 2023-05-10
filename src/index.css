@@ -11,7 +11,7 @@
 :root {
   --main: #fffffe;
   --text: #272343;
-  --soft-dark:#2d334a;
+  --soft-dark:#424657;
   --accent: #ffd803;
   --secondary:#e3f6f5;
   --tertiary: #bae8e8;
@@ -83,6 +83,7 @@ li {
 /* Configuramos anclas suaves */
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
@@ -102,11 +103,11 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 /* Configuramos el texto que seleccionamos */
 ::-moz-selection {
-  background-color: var(--negro);
+  background-color: var(--text);
   color: var(--blanco);
 }
 ::selection {
-  background-color: var(--negro);
+  background-color: var(--text);
   color: var(--blanco);
 }
 
@@ -149,7 +150,7 @@ body {
   min-height: 100vh;
   font-size: 100%;
   font-family: var(--tipo-principal);
-  color: var(--negro);
+  color: var(--text);
   /* opcional */
   line-height: 1.4em;
   /* opcional */
