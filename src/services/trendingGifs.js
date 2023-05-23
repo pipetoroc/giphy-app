@@ -1,7 +1,9 @@
-export default function trendingGifs () {
-  const URL_TRENDING = 'https://api.giphy.com/v1/gifs/trending?api_key=pJqYviFUDNfFcku0l5QR8kqFgRDjny45&limit=25&rating=g'
+const API_KEY = 'pJqYviFUDNfFcku0l5QR8kqFgRDjny45'
 
-  return fetch(URL_TRENDING)
+export default function trendingGifs (endPoint = 'trending', keyword = '') {
+  const API_URL = `https://api.giphy.com/v1/gifs/${endPoint}?api_key=${API_KEY}&q=${keyword}&limit=25&offset=0&rating=g&lang=en`
+
+  return fetch(API_URL)
     .then(res => res.json())
     .then(response => {
       const { data } = response
@@ -10,7 +12,6 @@ export default function trendingGifs () {
         const { url } = images.downsized_medium
         return { id, title, url }
       })
-      console.log(gifs)
       return gifs
     })
 }

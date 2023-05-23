@@ -1,19 +1,40 @@
 .app{
-  background-color: var(--main);
+  background-color: var(--secondary);
   color: var(--text);
   min-height: 100vh;
 }
 .home__title{
-  margin-bottom: 64px;
+  margin: 40px 0;
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
   color: var(--text);
 }
+.home__logo{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 40px auto;
+  background-image: url(./assets/pipe_toro.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
 .home__form{
   display: flex;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 150px;
+  gap: 32px;
+}
+.home__button{
+  height: 48px;
+  padding: 0 16px;
+  line-height: 48px;
+  font-size: 1.6rem;
+  background-color: var(--accent);
+  color: var(--text);
+  cursor: pointer;
 }
 .home__input{
   width: 300px;
@@ -22,7 +43,7 @@
   align-self: center;
   color: var(--text);
   font-size: 1.6rem;
-  background-color: var(--tertiary  );
+  background-color: var(--tertiary);
   padding: 8px;
   border-radius: 4px;
 }

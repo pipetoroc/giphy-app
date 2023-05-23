@@ -8,8 +8,9 @@ function App () {
   return (
     <>
       <section className='app'>
+          <h1 className='home__title'> The  Giphy App </h1>
         <Link to='/'>
-          <img className="logo" src='/' />
+          <div className="home__logo" src='/' />
         </Link>
 
         <Route

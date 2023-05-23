@@ -18,10 +18,9 @@ function Home () {
   return (
     <>
 
-      <h1 className='home__title'> The  Giphy App </h1>
         <form className='home__form' onSubmit={handleSubmit}>
           <input className='home__input' type="text" placeholder='Busca tu gif' value={keyword} onChange={hadleChange}/>
-          <button> search! </button>
+          <button className='home__button'> search! </button>
         </form>
         <TrendingGifs/>
 
